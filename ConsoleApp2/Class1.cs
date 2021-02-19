@@ -41,7 +41,8 @@ namespace ConsoleApp2
 
                 string excel_demo = "#rso > div:nth-child(1) > div:nth-child(1) > div > div.yuRUbf > a > div > cite";
 
-                query.SendKeys("download  sample excel");
+
+                query.SendKeys("test");
 
                 query.Submit();
 
@@ -49,7 +50,8 @@ namespace ConsoleApp2
 
                 driver.FindElement(By.CssSelector(excel_demo)).Click();
 
-                
+
+                Thread.Sleep(6000);
 
 
                 //string userRoot = System.Environment.GetEnvironmentVariable("USERPROFILE");
