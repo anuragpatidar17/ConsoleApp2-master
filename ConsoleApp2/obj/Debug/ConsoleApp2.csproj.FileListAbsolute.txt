@@ -34,3 +34,4 @@
 /Users/anuragpatidar/Desktop/ConsoleApp2-master/ConsoleApp2/obj/Debug/ConsoleApp2.csproj.CopyComplete
 /Users/anuragpatidar/Desktop/ConsoleApp2-master/ConsoleApp2/obj/Debug/ConsoleApp2.dll
 /Users/anuragpatidar/Desktop/ConsoleApp2-master/ConsoleApp2/obj/Debug/ConsoleApp2.pdb
+/Users/anuragpatidar/Desktop/ConsoleApp2-master/ConsoleApp2/obj/Debug/ConsoleApp2.csprojAssemblyReference.cache
