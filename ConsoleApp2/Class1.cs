@@ -21,10 +21,11 @@ namespace ConsoleApp2
         {
             var driver = new ChromeDriver();
             driver.Manage().Window.Maximize();
+            Thread.Sleep(2000);
 
             {
-           
-            //FileStream file = new FileStream(@"/Users/anuragpatidar/Desktop/ConsoleApp2-master/Book1.xlsx", FileMode.Open, FileAccess.Read);
+
+                //FileStream file = new FileStream(@"/Users/anuragpatidar/Desktop/ConsoleApp2-master/Book1.xlsx", FileMode.Open, FileAccess.Read);
                 //FileStream file = new FileStream(@"D:\a\1\s\Book1.xlsx", FileMode.Open, FileAccess.Read);
                 //XSSFWorkbook workbook = new XSSFWorkbook(file);
                 //ISheet sheet = workbook.GetSheet("Sheet1");
@@ -32,13 +33,13 @@ namespace ConsoleApp2
                 //var value = string.Format(sheet.GetRow(0).GetCell(0).StringCellValue);
 
 
-
+                Thread.Sleep(2000);
                 driver.Navigate().GoToUrl("http://www.google.com/");
 
-
+                Thread.Sleep(2000);
                 IWebElement query = driver.FindElement(By.Name("q"));
 
-
+                Thread.Sleep(2000);
                 string excel_demo = "#rso > div:nth-child(1) > div:nth-child(1) > div > div.yuRUbf > a > div > cite";
 
 
@@ -64,7 +65,7 @@ namespace ConsoleApp2
 
 
 
-                driver.Quit();
+                
             }
 
         }
