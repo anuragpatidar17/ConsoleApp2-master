@@ -25,10 +25,7 @@ steps:
   inputs:
     command: 'restore'
     feedsToUse: 'select'
-- task: DotNetCoreCLI@2
-  inputs:
-    command: 'test'
-    projects: '**\*ConsoleApp2.dll'
+
 - task: CopyFiles@2
   inputs:
     sourceFolder: $(Build.SourcesDirectory)
