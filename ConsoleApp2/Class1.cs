@@ -14,14 +14,13 @@ using System.Threading;
 namespace ConsoleApp2
 {
 
-    public class Class1
     {
         [Test]
         public void SearchForWord()
         {
             var driver = new ChromeDriver();
             driver.Manage().Window.Maximize();
-            Thread.Sleep(2000);
+            Thread.Sleep(1000);
 
             {
 
@@ -33,35 +32,20 @@ namespace ConsoleApp2
                 //var value = string.Format(sheet.GetRow(0).GetCell(0).StringCellValue);
 
 
-                Thread.Sleep(2000);
+                
                 driver.Navigate().GoToUrl("http://www.google.com/");
 
-                Thread.Sleep(2000);
+               
                 IWebElement query = driver.FindElement(By.Name("q"));
 
-                Thread.Sleep(2000);
-                string excel_demo = "#rso > div:nth-child(1) > div:nth-child(1) > div > div.yuRUbf > a > div > cite";
+
+                Console.WriteLine(driver.Title + " test run successfully.");
+
+                driver.quit();
+
+               
 
 
-                query.SendKeys("test");
-
-                query.Submit();
-
-                Thread.Sleep(2000);
-
-                driver.FindElement(By.CssSelector(excel_demo)).Click();
-
-
-                Thread.Sleep(6000);
-
-
-                //string userRoot = System.Environment.GetEnvironmentVariable("USERPROFILE");
-                //string downloadFolder = Path.Combine(userRoot, "Documents");
-                //Console.WriteLine(userRoot);
-                //Open excel report
-                //FileStream file2 = new FileStream(downloadFolder + "\\Export.xlsx", FileMode.Open, FileAccess.Read);
-                //XSSFWorkbook workbook2 = new XSSFWorkbook(file2);
-                //ISheet sheet2 = workbook2.GetSheet("Sheet1");
 
 
 
