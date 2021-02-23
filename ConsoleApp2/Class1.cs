@@ -33,15 +33,15 @@ namespace ConsoleApp2
 
 
                 
-                driver.Navigate().GoToUrl("http://www.google.com/");
+                driver.Navigate().GoToUrl("https://mds-test.shell.com/");
 
                
-                IWebElement query = driver.FindElement(By.Name("q"));
+                
 
 
                 Console.WriteLine(driver.Title + " test run successfully.");
 
-                driver.quit();
+                driver.Quit();
 
                
 
